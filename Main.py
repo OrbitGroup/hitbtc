@@ -15,7 +15,9 @@ sortedData = sortData(tickers)
 # takes sorted market data and calculates every possible triangular arbitrage opportunity
 # 'uniqueMarkets' is every unique symbol which is involved with a possible triarb trade
 uniqueMarkets, opportunities = calculateOpportunities(sortedData)
-print(len(uniqueMarkets))
+#print(len(uniqueMarkets))
 
+# passing one triangular set through the function as a test
+#uniqueMarkets = ["EDGBTC", "EDGETH", "ETHBTC"]
 # send unique markets to websocket module, to then subscribe to those order books
 websockets(uniqueMarkets)

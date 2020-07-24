@@ -40,7 +40,7 @@ def calculateOpportunities(sortedData):
                     # loggerArb = logging.getLogger("hitbtc opportunities")
                     # loggerArb.setLevel(logging.INFO)
                     # loggerArb.info(entry)
-
                     opportunities.append(entry)
+
     uniqueMarkets = list(dict.fromkeys(uniqueMarkets))
-    return(opportunities, uniqueMarkets)
+    return(uniqueMarkets, opportunities)
